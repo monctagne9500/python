@@ -8,7 +8,7 @@ def exo1():
 #exo1()
 
 def exo2():
-    cpt=0;
+    cpt=2;
     for x in range(1000):
         if (x%2)!=0:
             print(x);
