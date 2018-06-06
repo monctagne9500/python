@@ -2,8 +2,11 @@
 import random
 
 case_init=list(range(9))
+
 grille=[]
 liste_aleatoire=[]
+
+
 
 #
 def init_case():
@@ -62,9 +65,47 @@ def coordonnees_aleatoire():
 
 #
 
+def remplissage_grille(grille,liste_aleatoire):
+
+    coord=[]
+    chiffre=0
+    cpt=0
+
+    for i in range(len(liste_aleatoire)):
+
+     chiffre=liste_aleatoire[i]
+     coord=coordonnees_aleatoire()
+    # for x in range(len(grille)):
+
+     #   for y in range(len(grille)):
+
+     if grille[coord[0]][coord[1]]== 0:
+        grille[coord[0]][coord[1]]=chiffre
+        del liste_aleatoire[i]
+
+
+
+
+
+
+
+
+
+
+#
 init_case()
+
 affiche(grille)
+
 init_aleatoire()
+
+
+remplissage_grille(grille,liste_aleatoire)
+
+affiche(grille)
+
+
+
 
 
 
