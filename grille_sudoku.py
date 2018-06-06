@@ -24,12 +24,27 @@ def affiche(grille):
 #
 def init_aleatoire():
 
-    nombre_aleatoire=random.randint(1,20)
+    choix=[]
+
+    nombre_aleatoire=random.randint(10,20)
+
+    print("\n")
+    print(nombre_aleatoire)
+
 
     for x in range(nombre_aleatoire):
-        liste_aleatoire.append(random.randint(1,9))
+         liste_aleatoire.append(random.randint(1,9))
 
-print(liste_aleatoire)
+    print(liste_aleatoire)
+
+    for x in range(nombre_aleatoire):
+
+        if x < nombre_aleatoire-1:
+            if liste_aleatoire[x] == liste_aleatoire[x+1]:
+                if liste_aleatoire[x+1]!=9:
+                    liste_aleatoire[x+1]+=1
+
+    print(liste_aleatoire)
 #
 
 init_case()
