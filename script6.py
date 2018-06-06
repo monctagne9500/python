@@ -38,5 +38,3 @@ def cherche_min(liste,nombre):
     print(liste[0:nombre])
 
 
-
-

@@ -1,11 +1,19 @@
 #!usr/bin/python3
 
 import random
+
+#tableau
+
+tableau=[0]*2
+tableau2=2*[0]
+print(tableau)
+'''tableau de taille 2 initialisé a 0'''
+
 def exo1():
     for x in range(500):
         print("je dois faire des sauvegardes réguliéres de mas fichiers")
 
-#exo1()
+#exo1()git
 
 def exo2():
     cpt=2;

@@ -61,8 +61,13 @@ def coordonnees_aleatoire():
     return coord
 
 #
+
 init_case()
 affiche(grille)
 init_aleatoire()
+
+
+
+
 
 
