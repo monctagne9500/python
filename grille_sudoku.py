@@ -43,10 +43,26 @@ def init_aleatoire():
             if liste_aleatoire[x] == liste_aleatoire[x+1]:
                 if liste_aleatoire[x+1]!=9:
                     liste_aleatoire[x+1]+=1
-
+    print("\n")
+    print("liste_aleatoire modifié\n")
     print(liste_aleatoire)
 #
+def coordonnees_aleatoire():
 
+    coord=[]
+
+
+
+
+    for i in range(2):
+
+        coord.append(random.randint(0,8))
+
+    return coord
+
+#
 init_case()
 affiche(grille)
 init_aleatoire()
+
+
