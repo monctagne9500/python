@@ -1,4 +1,6 @@
 #! /usr/bin/python3
+#hola
+
 import random
 
 case_init=list(range(9))
