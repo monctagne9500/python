@@ -66,6 +66,10 @@ def coordonnees_aleatoire():
 def remplissage_grille(grille):
 
     flag=True
+    cpt=0
+    chiffre=0
+
+
 
     '''tant que flag == True'''
 
@@ -73,21 +77,28 @@ def remplissage_grille(grille):
 
 
         coord_aleatoire=coordonnees_aleatoire()
-        print(coord_aleatoire)
+        chiffre=liste_aleatoire[0]
+
         #print(grille[coord_aleatoire[0]][coord_aleatoire[1]])
 
+        flag_ok=True
 
         if grille[coord_aleatoire[0]][coord_aleatoire[1]]==0:
 
+            for y in range(len(grille)):
 
-                for i in range(len(grille)):
-                    print(coord_aleatoire[0],i)
-                    #print(i, coord_aleatoire[1])
+                    if(grille[coord_aleatoire[y]][coord_aleatoire[1]] == chiffre) and grille[coord_aleatoire[0]][coord_aleatoire[y]] == chiffre:
+                        flag_ok=False
 
 
-                    # print(liste_aleatoire)
-                    grille[coord_aleatoire[0]][coord_aleatoire[1]]=liste_aleatoire[0]
-                    del liste_aleatoire[0]
+
+
+        #if flag_ok==True
+        if flag_ok:
+
+            grille[coord_aleatoire[0]][coord_aleatoire[1]]=liste_aleatoire[0]
+            del liste_aleatoire[0]
+            cpt+=1
 
         if len(liste_aleatoire)==0:
             flag=False
@@ -115,6 +126,8 @@ affiche(grille)
 init_aleatoire()
 
 remplissage_grille(grille)
+
+print("\nRESULTAT\n")
 
 affiche(grille)
 
