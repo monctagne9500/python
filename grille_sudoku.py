@@ -71,16 +71,18 @@ def remplissage_grille(grille):
 
     while flag:
 
+
         coord_aleatoire=coordonnees_aleatoire()
-        #print(coord_aleatoire)
+        print(coord_aleatoire)
         #print(grille[coord_aleatoire[0]][coord_aleatoire[1]])
 
 
         if grille[coord_aleatoire[0]][coord_aleatoire[1]]==0:
 
+
                 for i in range(len(grille)):
                     print(coord_aleatoire[0],i)
-                    print(i, coord_aleatoire[1])
+                    #print(i, coord_aleatoire[1])
 
 
                     # print(liste_aleatoire)
