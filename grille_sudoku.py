@@ -69,47 +69,61 @@ def coordonnees_aleatoire():
 def remplissage_grille(grille):
 
     flag=True
+    cpt=0
+    chiffre = 0
+    coord = []
 
     '''tant que flag == True'''
 
     while flag:
+        
 
         coord_aleatoire=coordonnees_aleatoire()
         #print(coord_aleatoire)
         #print(grille[coord_aleatoire[0]][coord_aleatoire[1]])
 
+        for x in range(len(grille)):
 
-        if grille[coord_aleatoire[0]][coord_aleatoire[1]]==0:
-
-                for i in range(len(grille)):
-                    print(coord_aleatoire[0],i)
-                    print(i, coord_aleatoire[1])
+            for y in range(len(grille)):
 
 
-                    # print(liste_aleatoire)
-                    grille[coord_aleatoire[0]][coord_aleatoire[1]]=liste_aleatoire[0]
-                    del liste_aleatoire[0]
 
-        if len(liste_aleatoire)==0:
-            flag=False
+                if grille[coord_aleatoire[0]][coord_aleatoire[1]]==0:
+                    if grille[coord_aleatoire[0]][y]!= chiffre:
 
 
 
 
+                           # print(coord_aleatoire[0],cpt)
 
 
 
+                            # print(liste_aleatoire)
+                            grille[coord_aleatoire[0]][coord_aleatoire[1]]=liste_aleatoire[0]
+                            grille[coord[0]][coord[1]] = chiffre
+                            del liste_aleatoire[0]
+                            cpt+=1
 
-
-
-
-
+                if len(liste_aleatoire)==0:
+                    flag=False
 
 
 
 
 
-def remplissage_grille(grille,liste_aleatoire):
+
+
+
+
+
+
+
+
+
+
+
+
+'''def remplissage_grille(grille,liste_aleatoire):
 
     coord=[]
     chiffre=0
@@ -119,17 +133,17 @@ def remplissage_grille(grille,liste_aleatoire):
 
      chiffre=liste_aleatoire[i]
      coord=coordonnees_aleatoire()
-    # for x in range(len(grille)):
+     for x in range(len(grille)):
 
-     #   for y in range(len(grille)):
+       #for y in range(len(grille)):
 
-     if grille[coord[0]][coord[1]]== 0:
-        grille[coord[0]][coord[1]]=chiffre
-        del liste_aleatoire[i]
-
-
+      if grille[coord[0]][coord[1]]== 0:
+                grille[coord[0]][coord[1]]=chiffre
+                #del liste_aleatoire[i]
 
 
+
+'''
 
 
 
@@ -154,6 +168,8 @@ affiche(grille)
 
 
 remplissage_grille(grille,liste_aleatoire)
+
+print("/////////////////////\n")
 
 affiche(grille)
 
