@@ -119,6 +119,33 @@ def remplissage_grille(grille):
 
 
 
+def test(grille):
+    test=True
+    cpt=0
+
+ for i in range(len(grille)):
+
+     cpt=0
+
+    for y in range(len(grille)):
+        print("\n")
+        for x in range(len(grille)):
+
+            if grille[y][x] == i and grille[x][y] == i:
+                cpt+=1
+
+ if cpt>1:
+    test=False
+    break
+
+
+
+
+
+
+  return test
+
+
 
 
 
@@ -143,6 +170,10 @@ remplissage_grille(grille)
 print("\nRESULTAT\n")
 
 affiche(grille)
+
+test(grille)
+
+
 
 
 
