@@ -1,4 +1,6 @@
 #! /usr/bin/python3
+#hola
+
 import random
 
 case_init=list(range(9))
@@ -17,7 +19,7 @@ def init_case():
      case_init[x]=0
 
  for x in range(len(case_init)):
-     grille.append(case_init)
+     grille.append(case_init[:])
 
 #
 def affiche(grille):
@@ -64,6 +66,48 @@ def coordonnees_aleatoire():
     return coord
 
 #
+def remplissage_grille(grille):
+
+    flag=True
+
+    '''tant que flag == True'''
+
+    while flag:
+
+        coord_aleatoire=coordonnees_aleatoire()
+        #print(coord_aleatoire)
+        #print(grille[coord_aleatoire[0]][coord_aleatoire[1]])
+
+
+        if grille[coord_aleatoire[0]][coord_aleatoire[1]]==0:
+
+                for i in range(len(grille)):
+                    print(coord_aleatoire[0],i)
+                    print(i, coord_aleatoire[1])
+
+
+                    # print(liste_aleatoire)
+                    grille[coord_aleatoire[0]][coord_aleatoire[1]]=liste_aleatoire[0]
+                    del liste_aleatoire[0]
+
+        if len(liste_aleatoire)==0:
+            flag=False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def remplissage_grille(grille,liste_aleatoire):
 
@@ -98,6 +142,15 @@ init_case()
 affiche(grille)
 
 init_aleatoire()
+
+remplissage_grille(grille)
+
+affiche(grille)
+
+
+
+
+
 
 
 remplissage_grille(grille,liste_aleatoire)
