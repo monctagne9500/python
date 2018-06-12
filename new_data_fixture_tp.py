@@ -11,6 +11,7 @@ import random
 TABLE_TRUNCATE=("utilisateur_groupe","utilisateur","groupe")
 
 chaine_insert = ["INSERT INTO `utilisateur`(`nom`, `prenom`, `email`, `date_naissance`, `pays`, `ville`, `code_postal`,`telephoone`)VALUES (",")"]
+CHAINE_INSERT_GROUPE=["INSERT INTO `groupe`(`nom`) VALUES (",")"]
 
 conn = mysql.connector.connect(host="localhost", user="root", password="", database="test")
 cursor = conn.cursor()
@@ -96,6 +97,11 @@ def genererGroupe(nb_groupe):
     return groupe
 
 
+def insertionGroupe(groupe):
+
+    for i in range(len(groupe)):
+        cursor.execute(CHAINE_INSERT_GROUPE[0] +"'"+ groupe[i] +"'"+ CHAINE_INSERT_GROUPE[1])
+        print(CHAINE_INSERT_GROUPE[0] + groupe[i] + CHAINE_INSERT_GROUPE[1])
 
 
 
@@ -114,7 +120,7 @@ truncateTable()
 groupe_generated=genererGroupe(random.randint(TAILLE_MAX_AL,TAILLE_MAX_AL*6))
 print(groupe_generated)
 
-
+insertionGroupe(groupe_generated)
 envoyer_requete(chaine_insert)
 
 conn.commit()
