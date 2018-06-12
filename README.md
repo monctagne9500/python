@@ -1,4 +1,7 @@
 #COUCOU
 
-*rajout crypto_ascii.py*
+*rajout crypto_ascii.py
+
+
+***API REST = API QUI RENVOIE DU JSON!!!!
 
