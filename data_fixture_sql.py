@@ -35,14 +35,15 @@ def generation(nb_generation,cpt):
     chaine_generated = ""
 
     generator = Faker()
-
+    '''
     chaine_generated += motif
     chaine_generated+=str(cpt)
     chaine_generated += motif
 
     chaine_generated +=","+motif
+    '''
 
-
+    chaine_generated +="'"
     chaine_split=generator.name().split(" ")
 
     chaine_generated += chaine_split[0]
@@ -65,8 +66,12 @@ def generation(nb_generation,cpt):
     chaine_generated += motif
     chaine_generated += "," + motif
     chaine_generated+=generator.zipcode()
+    chaine_generated += motif+","
+    chaine_generated += motif
+    chaine_generated += generator.phone_number()
     chaine_generated += motif
 
+    print(chaine_generated)
      
  
     return chaine_generated
@@ -79,15 +84,18 @@ def generation(nb_generation,cpt):
 
 
 
-TAILLE_MAX_AL=50
-
-
-chaine_insert=["INSERT INTO `utilisateur`(`id`, `nom`, `prenom`, `email`, `date_naissance`, `pays`, `ville`, `code_postal`) VALUES (",")"]
+TAILLE_MAX_AL=int(input("entrer nombre de requete générée"))
 
 
 
+chaine_insert=["INSERT INTO `utilisateur`(`nom`, `prenom`, `email`, `date_naissance`, `pays`, `ville`, `code_postal`,`telephoone`)VALUES (",")"]
 
 
+
+
+
+
+10
 
     #chaine=generation(TAILLE_MAX_AL,i)
 
@@ -103,9 +111,9 @@ cursor = conn.cursor()
 
 for i in range(TAILLE_MAX_AL):
 
-    chaine = generation(TAILLE_MAX_AL,i)
-    cursor.execute(chaine_insert[0] + chaine +chaine_insert[1])
-    print(i,"   ", chaine )
+    chaine= generation(TAILLE_MAX_AL,i)
+    cursor.execute(chaine_insert[0]+chaine+chaine_insert[1])
+    print(i,"   ", chaine)
 
 conn.commit()
 cursor.close()

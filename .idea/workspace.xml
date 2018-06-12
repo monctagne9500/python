@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f114c3bf-9ef0-4583-a8d3-89ca84268913" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypto_ascii.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_ascii.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_fixture_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_fixture_sql.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_cours$data_fixture_sql.coverage" NAME="data_fixture_sql Coverage Results" MODIFIED="1528726446017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_cours$data_fixture_sql.coverage" NAME="data_fixture_sql Coverage Results" MODIFIED="1528804456738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$exo.coverage" NAME="exo Coverage Results" MODIFIED="1528355877078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$objet.coverage" NAME="objet Coverage Results" MODIFIED="1528198504189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$tKinter.coverage" NAME="tKinter Coverage Results" MODIFIED="1528268101074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -23,7 +23,7 @@
     <SUITE FILE_PATH="coverage/python_cours$script3.coverage" NAME="script3 Coverage Results" MODIFIED="1528106808065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$script6.coverage" NAME="script6 Coverage Results" MODIFIED="1528121057381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$grille_sudoku.coverage" NAME="grille_sudoku Coverage Results" MODIFIED="1528787126365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_cours$crypto_ascii.coverage" NAME="crypto_ascii Coverage Results" MODIFIED="1528788938236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_cours$crypto_ascii.coverage" NAME="crypto_ascii Coverage Results" MODIFIED="1528791246009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_cours$script5.coverage" NAME="script5 Coverage Results" MODIFIED="1528117205273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -85,16 +85,17 @@
       <file leaf-file-name="grille_sudoku.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grille_sudoku.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_fixture_sql.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_fixture_sql.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_fixture_sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
+            <state relative-caret-position="340">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#19#41#0" expanded="true" />
               </folding>
@@ -102,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crypto_ascii.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crypto_ascii.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crypto_ascii.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -147,6 +148,7 @@
         <option value="$PROJECT_DIR$/exo.py" />
         <option value="$PROJECT_DIR$/grille_sudoku.py" />
         <option value="$PROJECT_DIR$/crypto_ascii.py" />
+        <option value="$PROJECT_DIR$/data_fixture_sql.py" />
       </list>
     </option>
   </component>
@@ -201,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.crypto_ascii">
+  <component name="RunManager" selected="Python.data_fixture_sql">
     <configuration name="crypto_ascii" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_cours" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -216,6 +218,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crypto_ascii.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="data_fixture_sql" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_cours" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_fixture_sql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,25 +280,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="objet" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_cours" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/objet.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="tKinter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_cours" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,17 +302,17 @@
     <list>
       <item itemvalue="Python.exo" />
       <item itemvalue="Python.tKinter" />
-      <item itemvalue="Python.objet" />
       <item itemvalue="Python.grille_sudoku" />
       <item itemvalue="Python.crypto_ascii" />
+      <item itemvalue="Python.data_fixture_sql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_fixture_sql" />
         <item itemvalue="Python.crypto_ascii" />
         <item itemvalue="Python.grille_sudoku" />
         <item itemvalue="Python.exo" />
         <item itemvalue="Python.tKinter" />
-        <item itemvalue="Python.objet" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +331,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -699,24 +700,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grille_sudoku.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_fixture_sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <folding>
-            <element signature="e#19#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crypto_ascii.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_fixture_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#19#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
