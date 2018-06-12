@@ -12,6 +12,7 @@ TABLE_TRUNCATE=("utilisateur_groupe","utilisateur","groupe")
 
 chaine_insert = ["INSERT INTO `utilisateur`(`nom`, `prenom`, `email`, `date_naissance`, `pays`, `ville`, `code_postal`,`telephoone`)VALUES (",")"]
 CHAINE_INSERT_GROUPE=["INSERT INTO `groupe`(`nom`) VALUES (",")"]
+CHAINE_INSERT_UTILISATEUR_GROUPE=["INSERT INTO `utilisateur_groupe`(`utilisateur_id`, `groupe_id`) VALUES (",")"]
 
 conn = mysql.connector.connect(host="localhost", user="root", password="", database="test")
 cursor = conn.cursor()
@@ -103,6 +104,35 @@ def insertionGroupe(groupe):
         cursor.execute(CHAINE_INSERT_GROUPE[0] +"'"+ groupe[i] +"'"+ CHAINE_INSERT_GROUPE[1])
         print(CHAINE_INSERT_GROUPE[0] + groupe[i] + CHAINE_INSERT_GROUPE[1])
 
+def insertionGroupeUtilisateur(utilisateur,groupe):
+
+    aleatoire=0
+    aleatoire2=0
+
+    liste=[]
+    print("insertion")
+    for i in range(len(utilisateur)):
+
+        aleatoire=random.randint(TAILLE_MAX_AL/2,TAILLE_MAX_AL*6)
+        liste=[]
+        print("insertion2")
+
+        for e in range(aleatoire):
+
+            print("insertion3")
+            aleatoire2=random.randint(0,len(groupe))
+            if aleatoire2 not in liste:
+                print("insertion4")
+                cursor.execute(CHAINE_INSERT_UTILISATEUR_GROUPE[0] +"'"+str(i)+"','"+ + CHAINE_INSERT_UTILISATEUR_GROUPE[1])
+                liste.append(aleatoire2)
+                print(CHAINE_INSERT_UTILISATEUR_GROUPE[0] +"'"+str(i)+"','"+ + CHAINE_INSERT_UTILISATEUR_GROUPE[1])
+            else:
+                print("insertion5")
+                e-=1
+
+
+
+
 
 
 def envoyer_requete(requete):
@@ -112,7 +142,12 @@ def envoyer_requete(requete):
         cursor.execute(requete[0] + chaine + requete[1])
         print(i, "   ", chaine)
 
+    return chaine
 
+
+'''//////////////////////////////////////////////'''
+
+utilisateur=[]
 groupe_generated=[]
 
 truncateTable()
@@ -121,7 +156,9 @@ groupe_generated=genererGroupe(random.randint(TAILLE_MAX_AL,TAILLE_MAX_AL*6))
 print(groupe_generated)
 
 insertionGroupe(groupe_generated)
-envoyer_requete(chaine_insert)
+chaine=envoyer_requete(chaine_insert)
+insertionGroupeUtilisateur(utilisateur,groupe_generated)
+
 
 conn.commit()
 cursor.close()
