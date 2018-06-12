@@ -111,7 +111,7 @@ groupe_generated=[]
 
 truncateTable()
 
-groupe_generated=genererGroupe(random.randint(TAILLE_MAX_AL/2,TAILLE_MAX_AL*2))
+groupe_generated=genererGroupe(random.randint(TAILLE_MAX_AL,TAILLE_MAX_AL*6))
 print(groupe_generated)
 
 
