@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f114c3bf-9ef0-4583-a8d3-89ca84268913" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/new_data_fixture_tp.py" beforeDir="false" afterPath="$PROJECT_DIR$/new_data_fixture_tp.py" afterDir="false" />
-    </list>
+    <list default="true" id="f114c3bf-9ef0-4583-a8d3-89ca84268913" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,8 +95,8 @@
       <file leaf-file-name="new_data_fixture_tp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new_data_fixture_tp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="520">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#19#41#0" expanded="true" />
               </folding>
@@ -722,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new_data_fixture_tp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="520">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
           <folding>
             <element signature="e#19#41#0" expanded="true" />
           </folding>
